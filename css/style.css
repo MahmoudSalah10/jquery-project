@@ -1,0 +1,248 @@
+:root {
+    --main-color: rgba(214, 46, 51, 0.6);
+    --white-color: #fff;
+    --black-color: black;
+    --hover-color: rgba(214, 46, 51, 0.4);
+    --bg-color: #ccc;
+    --text-color: #444;
+    --social-color: #D62E33;
+    --dark-grey: #495057;
+    --social-icon: #777;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    background-image: url(../images/events-heavenly-header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+section {
+    padding-block: 6.25rem;
+}
+
+.home-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--main-color);
+    display: grid;
+    place-content: center;
+}
+
+.home-content {
+    z-index: 1;
+    color: var(--white-color);
+}
+
+.home-content h2 {
+    color: inherit;
+    font-size: 3.75rem;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+
+
+}
+
+aside .side-box {
+    padding: 1.25rem;
+    width: 15.625rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-color);
+    white-space: nowrap;
+    display: none
+}
+
+aside .icon {
+    padding: .625rem;
+    color: var(--white-color);
+    font-size: 1.875rem;
+    cursor: pointer;
+    margin-top: 3.125rem;
+    position: relative;
+    top: 40%;
+    left: 0;
+
+}
+
+.side-box a {
+    padding: 1.25rem .5rem 1.25rem 2rem;
+    font-size: 1.5625rem;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+.side-box .closebtn {
+    position: absolute;
+    top: 0;
+    right: 4.375rem;
+    font-size: 2.25rem;
+    margin-left: 3.125rem;
+
+}
+
+.side-box a:hover {
+    color: var(--hover-color)
+}
+
+
+
+/* Slider Style */
+#duration {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#duration h3 {
+    padding: .625rem;
+    margin: 0;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+#duration div {
+    display: none;
+    background-color: var(--bg-color);
+    color: var(--black-color);
+}
+
+
+
+/* counter style */
+
+.counter {
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 20.625rem;
+}
+
+.counter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer div {
+    display: inline-block;
+    line-height: 1;
+    padding: 1.25rem;
+    font-size: 2.5rem;
+}
+
+span {
+    display: block;
+    font-size: 1.25rem;
+    color: var(--white-color);
+}
+
+#days {
+    font-size: 6.25rem;
+    color: var(--white-color);
+}
+
+#hours {
+    font-size: 6.25rem;
+    color: var(--white-color);
+}
+
+#minutes {
+    font-size: 6.25rem;
+    color: var(--white-color);
+}
+
+#seconds {
+    font-size: 3.125rem;
+    color: var(--white-color);
+}
+
+
+
+
+.contact h2 {
+    text-transform: uppercase;
+    font-size: 2.1875rem;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+.contact h3 {
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.social-list {
+    margin-top: 3.75rem;
+    color: var(--social-icon);
+}
+
+.social-list i {
+    margin-right: .625rem;
+    border: .0625rem solid var(--bg-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.625rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.social-list i:hover {
+    color: var(--white-color);
+    background-color: var(--social-color);
+    border: .0625rem solid var(--social-color);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark-grey);
+    background-color: var(--white-color);
+    background-clip: padding-box;
+    border: .0625rem solid var(--bg-color);
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1.25rem;
+    border-radius: 0;
+}
